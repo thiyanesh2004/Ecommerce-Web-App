@@ -1,6 +1,20 @@
-import LoginForm from "./Project/LoginForm";
-import SignupForm from "./Project/SignupForm";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ComponentLifeCycle from "./component/Day8/ComponentLifeCycle";
+
+// import Car from "./component/Day8/Car";
+// import ErrorBoundary from "./component/Day8/ErrorBoundary";
+// import TryCatch from "./component/Day8/TryCatch";
+
+
+//import BasicButtons from "./component/Day6/Buttons";
+
+// import Demo from "./component/Day6/Demo";
+// import List from "./component/Day6/List";
+// import ListObject from "./component/Day6/ListObject";
+
+//import LoginForm from "./Project/LoginForm";
+
+ //import SignupForm from "./Project/SignupForm";
+ //import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // import ArrowProps from "./Day4/ArrowProps";
 
@@ -39,35 +53,56 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 // }
 // AuthPage.js
 
-const App = () => {
-  return (
+//  const App = () => {
+//    return (
+//      <div>
+//        <BrowserRouter>
+//          <Routes>
+//            <Route path='/login' element={<LoginForm />}></Route>
+//            <Route path='/signup' element={<SignupForm />}></Route>
+//          </Routes>
+//        </BrowserRouter>
+//      </div>
+
+//    );
+//  };
+
+// export default App;
+
+
+// export default function app()
+// {
+//    return(
+//      <div>
+//        <List/>
+//        <BasicButtons/>
+//        <ListObject/>
+//        <Demo/>
+//      </div>
+//    )
+// }
+
+
+
+
+// export default function App(){
+//   return(
+//     <div>
+//        <ErrorBoundary>
+//       <Car carName="Thar"></Car>
+//         </ErrorBoundary>
+//         <ErrorBoundary>
+//         <Car carName="JCB"></Car>
+//         </ErrorBoundary>
+//         <TryCatch/>
+//     </div>
+//   )
+//}
+
+export default function App(){
+  return(
     <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/login' element={<LoginForm />}></Route>
-          <Route path='/signup' element={<SignupForm />}></Route>
-        </Routes>
-      </BrowserRouter>
+      <ComponentLifeCycle/>
     </div>
-
-  );
-  // const handleLogin = (credentials) => {
-  //   console.log('Logging in with:', credentials);
-  // };
-
-  // const handleSignup = (userDetails) => {
-  //   console.log('Signing up with:', userDetails);
-  // };
-
-  // return (
-  //   <div>
-  //     <h2>Login</h2>
-  //     <LoginForm onLogin={handleLogin} />
-
-  //     <h2>Sign Up</h2>
-  //     <SignupForm onSignup={handleSignup} />
-  //   </div>
-  // );
-};
-
-export default App;
+  )
+} 
